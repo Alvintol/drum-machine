@@ -5,39 +5,38 @@ function App() {
     <div className="app">
       main body
       <div id='left-container'>
-        main container
-        <button>
+        <div className='drum-btn'>
           Button1
-        </button>
-        <button>
+        </div>
+        <div className='drum-btn'>
           Button2
-        </button>
-        <button>
+        </div>
+        <div className='drum-btn'>
           Button3
-        </button>
-        <button>
+        </div>
+        <div className='drum-btn'>
           Button4
-        </button>
-        <button>
+        </div>
+        <div className='drum-btn'>
           Button5
-        </button>
-        <button>
+        </div>
+        <div className='drum-btn'>
           Button6
-        </button>
-        <button>
+        </div>
+        <div className='drum-btn'>
           Button7
-        </button>
-        <button>
+        </div>
+        <div className='drum-btn'>
           Button8
-        </button>
-        <button>
+        </div>
+        <div className='drum-btn'>
           Button9
-        </button>
+        </div>
       </div>
       <div id='right-container'>
-        <button id='power'>
+        <div className='drum-btn' id='power'>
           power
-        </button>
+        </div>
         <div id='display'>
           display
           <div>
@@ -47,9 +46,9 @@ function App() {
         <div id='slider'>
           slider
         </div>
-        <button id='bank'>
+        <div className='drum-btn' id='bank'>
           bank?
-        </button>
+        </div>
       </div>
     </div>
   );
