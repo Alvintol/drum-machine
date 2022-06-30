@@ -1,40 +1,40 @@
-import './css/main.css';
+import '../src/css/main.css';
 
 const App = () => {
   return (
     <div className="app">
       main body
-      <div id='left-container flex-row flex-wrap'>
-        <div className='drum-btn bg-red-500'>
+      <div id='left-container' className='grid gap-3 grid-cols-3 grid-rows-3"'>
+        <div className='px-6 py-6 m-1 text-center drop-shadow'>
           Button1
         </div>
-        <div className='drum-btn'>
+        <div className=''>
           Button2
         </div>
-        <div className='drum-btn'>
+        <div className=''>
           Button3
         </div>
-        <div className='drum-btn'>
+        <div className=''>
           Button4
         </div>
-        <div className='drum-btn'>
+        <div className=''>
           Button5
         </div>
-        <div className='drum-btn'>
+        <div className=''>
           Button6
         </div>
-        <div className='drum-btn'>
+        <div className=''>
           Button7
         </div>
-        <div className='drum-btn'>
+        <div className=''>
           Button8
         </div>
-        <div className='drum-btn'>
+        <div className=''>
           Button9
         </div>
       </div>
       <div id='right-container flex-col'>
-        <div className='drum-btn' id='power'>
+        <div className='' id='power'>
           power
         </div>
         <div id='display'>
@@ -46,7 +46,7 @@ const App = () => {
         <div id='slider'>
           slider
         </div>
-        <div className='drum-btn' id='bank'>
+        <div className='' id='bank'>
           bank?
         </div>
       </div>
