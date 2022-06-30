@@ -45,11 +45,9 @@ const App = () => {
             </div>
           </div>
           <div id='display'
+          className='flex flex-col w-1/2 h-1/5 text-center justify-center font-bold'
           >
             display
-            <div>
-              screen
-            </div>
           </div>
           <div id='slider'>
             slider
