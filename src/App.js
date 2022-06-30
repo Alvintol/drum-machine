@@ -50,7 +50,12 @@ const App = () => {
             display
           </div>
           <div id='slider'>
-            slider
+            <input 
+            min='0'
+            max='1'
+            step='0.01'
+            type='range'
+            />
           </div>
           <div id='bank'>
             <div className='flex flex-row text-sm text-bold w-20 h-8 justify-start'>
