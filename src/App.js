@@ -1,11 +1,11 @@
-import './main.css';
+import './css/main.css';
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       main body
-      <div id='left-container'>
-        <div className='drum-btn'>
+      <div id='left-container flex-row flex-wrap'>
+        <div className='drum-btn bg-red-500'>
           Button1
         </div>
         <div className='drum-btn'>
@@ -33,7 +33,7 @@ function App() {
           Button9
         </div>
       </div>
-      <div id='right-container'>
+      <div id='right-container flex-col'>
         <div className='drum-btn' id='power'>
           power
         </div>
