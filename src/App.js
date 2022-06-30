@@ -8,7 +8,7 @@ const App = () => {
     <div className="app h-screen flex flex-col items-center justify-center">
       <div className='container flex flex-col-reverse border-4 rounded-md  md:flex-row lg:mx-1/2'>
         <div id='button-container' className='grid gap-3 grid-cols-3 grid-rows-3 p-6 md:w-1/2'>
-          <div className={button}>
+          <div className='px-6 py-6 m-1 text-center shadow-xl'>
             1
           </div>
           <div className={button}>
