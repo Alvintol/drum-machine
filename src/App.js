@@ -36,25 +36,24 @@ const App = () => {
             9
           </div>
         </div>
-        <div id='right-container' className='flex flex-col justify-around items-center md:w-1/2'>
-          <div id='power'>
-            <div className='flex flex-row text-sm text-bold w-20 h-8 justify-start'>
-              <div className='p-1 align-center'>
-                ON
-              </div>
+        <div id='right-container' className='flex flex-col justify-around items-center h-64 md:w-1/2 md: h-full'>          <div id='power'>
+          <div className='flex flex-row text-sm text-bold w-20 h-8 justify-start'>
+            <div className='p-1 align-center'>
+              ON
             </div>
           </div>
+        </div>
           <div id='display'
-          className='flex flex-col w-1/2 h-1/5 text-center justify-center font-bold'
+            className='flex flex-col w-1/2 h-1/5 text-center justify-center font-bold'
           >
             display
           </div>
           <div id='slider'>
-            <input 
-            min='0'
-            max='1'
-            step='0.01'
-            type='range'
+            <input
+              min='0'
+              max='1'
+              step='0.01'
+              type='range'
             />
           </div>
           <div id='bank'>
