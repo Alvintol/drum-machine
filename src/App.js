@@ -6,38 +6,37 @@ const App = () => {
 
   return (
     <div className="app h-screen flex flex-col items-center justify-center">
-
-      <div className='container flex flex-col-reverse md:flex-row'>
-        <div id='left-container' className='grid gap-3 grid-cols-3 grid-rows-3"'>
+      <div className='container flex flex-col-reverse  md:flex-row'>
+        <div id='left-container' className='grid gap-3 grid-cols-3 grid-rows-3 p-6 md:w-1/2'>
           <div className={button}>
-            Button1
+            1
           </div>
           <div className={button}>
-            Button2
+            2
           </div>
           <div className={button}>
-            Button3
+            3
           </div>
           <div className={button}>
-            Button4
+            4
           </div>
           <div className={button}>
-            Button5
+            5
           </div>
           <div className={button}>
-            Button6
+            6
           </div>
           <div className={button}>
-            Button7
+            7
           </div>
           <div className={button}>
-            Button8
+            8
           </div>
           <div className={button}>
-            Button9
+            9
           </div>
         </div>
-        <div id='right-container flex-col'>
+        <div id='right-container' className='flex flex-col justify-center items-center md:w-1/2'>
           <div id='power'>
             power
           </div>
