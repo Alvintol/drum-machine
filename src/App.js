@@ -53,7 +53,11 @@ const App = () => {
             slider
           </div>
           <div id='bank'>
-            bank?
+            <div className='flex flex-row text-sm text-bold w-20 h-8 justify-start'>
+              <div className='p-1 align-center'>
+                ON
+              </div>
+            </div>
           </div>
         </div>
       </div>
