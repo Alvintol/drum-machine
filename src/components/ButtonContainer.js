@@ -1,10 +1,15 @@
+import Button from './Button';
 const ButtonContainer = () => {
   const buttonClass = 'px-6 py-6 m-1 text-center shadow-xl';
-  const buttons =
-    <>
-      <div className='px-6 py-6 m-1 text-center shadow-xl'>
-        1
-      </div>
+
+  return (
+    <div
+      id='button-container'
+      className='grid gap-3 grid-cols-3 grid-rows-3 p-6 md:w-1/2'>
+      <Button 
+      key={1}
+      id={1}
+      />
       <div className={buttonClass}>
         2
       </div>
@@ -29,14 +34,6 @@ const ButtonContainer = () => {
       <div className={buttonClass}>
         9
       </div>
-    </>
-
-
-  return (
-    <div
-      id='button-container'
-      className='grid gap-3 grid-cols-3 grid-rows-3 p-6 md:w-1/2'>
-      {buttons}
     </div>)
 };
 

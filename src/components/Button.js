@@ -1,7 +1,7 @@
-const Button = ({key}) => {
+const Button = ({id}) => {
   return (
-    <div className='px-6 py-6 m-1 text-center shadow-xl'>
-      {key}
+    <div className='border-solid px-6 py-6 m-1 text-center shadow-xl'>
+      {id}
     </div>
   )
 };

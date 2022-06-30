@@ -1,4 +1,4 @@
-import '../src/css/main.css';
+import './css/main.css';
 import ButtonContainer from './components/ButtonContainer';
 
 const App = () => {
