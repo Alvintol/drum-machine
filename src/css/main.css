@@ -696,10 +696,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-* {
-  border: thin solid red;
-}
-
 @media (min-width: 768px) {
   .md\:w-1\/2 {
     width: 50%;
@@ -709,3 +705,5 @@ video {
     flex-direction: row;
   }
 }
+
+
