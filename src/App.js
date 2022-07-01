@@ -2,6 +2,7 @@ import './css/main.css';
 import ButtonContainer from './components/ButtonContainer';
 import Display from './components/Display';
 import Switch from './components/Switch';
+import Slider from './components/Slider';
 
 const App = () => {
 
@@ -16,14 +17,9 @@ const App = () => {
         id='power'
         />
           <Display />
-          <div id='slider'>
-            <input
-              min='0'
-              max='1'
-              step='0.01'
-              type='range'
-            />
-          </div>
+          <Slider 
+          id='volume'
+          />
           <Switch
             id='bank'
           />
