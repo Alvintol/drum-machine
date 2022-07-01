@@ -1,6 +1,7 @@
 import './css/main.css';
 import ButtonContainer from './components/ButtonContainer';
 import Display from './components/Display';
+import Switch from './components/Switch';
 
 const App = () => {
 
@@ -10,13 +11,10 @@ const App = () => {
     <div className="app h-screen flex flex-col items-center justify-center">
       <div className='container flex flex-col-reverse border-4 rounded-md  md:flex-row lg:mx-1/2'>
         <ButtonContainer />
-        <div id='switch-container' className='flex flex-col justify-around items-center h-64 md:w-1/2 md: h-full'>          <div id='power'>
-          <div className='flex flex-row text-sm text-bold w-20 h-8 justify-start'>
-            <div className='p-1 align-center'>
-              ON
-            </div>
-          </div>
-        </div>
+        <div id='switch-container' className='flex flex-col justify-around items-center h-64 md:w-1/2 md: h-full'>          
+        <Switch 
+        id='power'
+        />
           <Display />
           <div id='slider'>
             <input
@@ -26,13 +24,9 @@ const App = () => {
               type='range'
             />
           </div>
-          <div id='bank'>
-            <div className='flex flex-row text-sm text-bold w-20 h-8 justify-start'>
-              <div className='p-1 align-center'>
-                ON
-              </div>
-            </div>
-          </div>
+          <Switch
+            id='bank'
+          />
         </div>
       </div>
     </div>
