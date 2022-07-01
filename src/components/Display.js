@@ -1,5 +1,11 @@
 const Display = () => {
-  return
+  return(
+    <div id='display'
+            className='flex flex-col border -solid border-2 border-stone-400 rounded-sm bg-slate-600 text-stone-200 w-1/2 h-1/5 text-center justify-center font-bold'
+          >
+            display
+          </div>
+  )
 };
 
 export default Display;
