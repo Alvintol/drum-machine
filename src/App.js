@@ -1,6 +1,6 @@
 import './css/main.css';
 import ButtonContainer from './components/ButtonContainer';
-
+import Display from './components/Display';
 
 const App = () => {
 
@@ -17,7 +17,7 @@ const App = () => {
             </div>
           </div>
         </div>
-         
+          <Display />
           <div id='slider'>
             <input
               min='0'
