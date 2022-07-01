@@ -10,30 +10,39 @@ const ButtonContainer = () => {
       key={1}
       id={1}
       />
-      <div className={buttonClass}>
-        2
-      </div>
-      <div className={buttonClass}>
-        3
-      </div>
-      <div className={buttonClass}>
-        4
-      </div>
-      <div className={buttonClass}>
-        5
-      </div>
-      <div className={buttonClass}>
-        6
-      </div>
-      <div className={buttonClass}>
-        7
-      </div>
-      <div className={buttonClass}>
-        8
-      </div>
-      <div className={buttonClass}>
-        9
-      </div>
+      <Button 
+      key={2}
+      id={2}
+      />
+      <Button 
+      key={3}
+      id={3}
+      />
+      <Button 
+      key={4}
+      id={4}
+      />
+      <Button 
+      key={5}
+      id={5}
+      />
+      <Button 
+      key={6}
+      id={6}
+      />
+      <Button 
+      key={7}
+      id={7}
+      />
+      <Button 
+      key={8}
+      id={8}
+      />
+      <Button 
+      key={9}
+      id={9}
+      />
+      
     </div>)
 };
 
