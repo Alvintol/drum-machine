@@ -1,8 +1,5 @@
 import './css/main.css';
 import ButtonContainer from './components/ButtonContainer';
-import Display from './components/Display';
-import Switch from './components/Switch';
-import Slider from './components/Slider';
 import SwitchContainer from './components/SwitchContainer';
 
 const App = () => {
