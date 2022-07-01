@@ -1,6 +1,5 @@
 import Button from './Button';
 const ButtonContainer = () => {
-  const buttonClass = 'px-6 py-6 m-1 text-center shadow-xl';
 
   return (
     <div
@@ -42,7 +41,6 @@ const ButtonContainer = () => {
       key={9}
       id={9}
       />
-      
     </div>)
 };
 
