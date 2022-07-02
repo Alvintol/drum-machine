@@ -16,11 +16,8 @@ const ButtonContainer = () => {
   return (
     <div
       id='button-container'
-      className='grid grid-cols-3 grid-rows-3 gap-3 p-1'>
+      className='grid grid-cols-3 grid-rows-3 gap-3 p-1 md:w-1/2'>
       {buttons}
-      {/* <Button
-      id={1}
-      /> */}
     </div>)
 };
 
