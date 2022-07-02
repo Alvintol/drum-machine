@@ -1,6 +1,7 @@
-export const state = {
-  power: 'ON',
-  display: '',
-  volume: 0.5,
-  bank: 'DRUM',
+
+export const appState = {
+    power: 'ON',
+    display: '',
+    volume: 0.5,
+    bank: 'DRUM',
 };
