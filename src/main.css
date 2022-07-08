@@ -4,6 +4,6 @@
 
 @tailwind utilities;
 
-/* * {
-  border: thin solid red;
-} */
+.app {
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png");
+}

@@ -13,7 +13,7 @@ const App = () => {
   return (
     <StateContext.Provider value={{state, setState}}>
       <div className="app h-screen flex flex-col items-center justify-center">
-        <div className='container flex flex-col-reverse border-4 rounded-md justify-between md:flex-row lg:mx-1/2'>
+        <div className='container flex flex-col-reverse border-4 border-double border-slate-600 rounded-md justify-between md:flex-row lg:mx-1/2'>
           <ButtonContainer />
           <SwitchContainer />
         </div>
