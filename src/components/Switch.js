@@ -10,7 +10,6 @@ const Switch = ({ id }) => {
   const powerBtn = state.power === 'ON' ? `${mainClass} justify-start`: `${mainClass} justify-end`;
   const bankBtn = state.bank === 'Heater' ? `${mainClass} justify-start`: `${mainClass} justify-end`;
 
-
   return (
     <div
       id={id}

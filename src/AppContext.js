@@ -16,17 +16,25 @@ export const StateProvider = ({ children }) => {
 
   const [state, setState] = useState(appState);
 
-  const togglePower = () =>
-    state.power === 'ON' ?
-      setState(prev => ({ ...prev, power: 'OFF' })) :
-      setState(prev => ({ ...prev, power: 'ON' }));
+  const togglePower = () => {
+    if (state.power === 'ON') {
+      setState(prev => ({ ...prev, power: 'OFF' }))
+    } else {
+      setState(prev => ({ ...prev, power: 'ON' }))
+      displayButton('Power: ON')
+    }
+  }
 
 
-  const toggleBank = () =>
-    state.bank === 'Heater' ?
-      setState(prev => ({ ...prev, bank: 'Piano' })) :
+  const toggleBank = async () => {
+    if (state.bank === 'Heater') {
+      setState(prev => ({ ...prev, bank: 'Piano' }))
+      displayButton('Piano Kit')
+    } else {
       setState(prev => ({ ...prev, bank: 'Heater' }));
-
+      displayButton('Heater Kit')
+    }
+  }
   const displayButton = (id) => setState(prev => ({ ...prev, display: id }));
 
   const updateVolume = (volume) => setState(prev => ({ ...prev, volume: volume }))
