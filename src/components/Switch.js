@@ -10,14 +10,15 @@ const Switch = ({ id }) => {
   const powerBtn = state.power === 'ON' ? `${mainClass} justify-start`: `${mainClass} justify-end`;
   const bankBtn = state.bank === 'Heater' ? `${mainClass} justify-start`: `${mainClass} justify-end`;
 
+
   return (
     <div
       id={id}
-      onClick={id === 'power' ? togglePower : toggleBank}
+      onClick={id === 'Power' ? togglePower : toggleBank}
     >
-      <div className={id === 'power' ? powerBtn : bankBtn}>
+      <div className={id === 'Power' ? powerBtn : bankBtn}>
         <div className='p-1 align-center border-solid border-2 border-stone-400 rounded-sm bg-slate-600 text-stone-200'>
-          {id === 'power' ? state.power : state.bank}
+          {id === 'Power' ? state.power : state.bank}
         </div>
       </div>
     </div>

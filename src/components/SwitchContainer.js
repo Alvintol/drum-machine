@@ -8,15 +8,14 @@ const SwitchContainer = () => {
       id='switch-container'
       className='flex flex-col justify-around items-center h-64 md:w-1/2 md: h-full'>
       <Switch
-        id='power'
+        id='Power'
       />
       <Display />
       <Slider
-        id='volume'
-        // updateVolume={updateVolume}
+        id='Volume'
       />
       <Switch
-        id='bank'
+        id='Bank'
       />
     </div>
   )
