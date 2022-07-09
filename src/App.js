@@ -23,7 +23,7 @@ const App = () => {
 
   const displayButton = (id) => setState(prev => ({ ...prev, display: id }));
 
-  
+  const updateVolume = (volume) => setState(prev => ({...prev, volume: volume}))
 
   return (
     <StateContext.Provider value={state}>
@@ -35,6 +35,7 @@ const App = () => {
           <SwitchContainer
             togglePower={togglePower}
             toggleBank={toggleBank}
+            updateVolume={updateVolume}
           />
         </div>
       </div>

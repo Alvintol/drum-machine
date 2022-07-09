@@ -2,7 +2,7 @@ import Display from '../components/Display';
 import Switch from '../components/Switch';
 import Slider from '../components/Slider';
 
-const SwitchContainer = ({togglePower, toggleBank}) => {
+const SwitchContainer = ({togglePower, toggleBank, updateVolume}) => {
   return (
     <div
       id='switch-container'
@@ -14,6 +14,7 @@ const SwitchContainer = ({togglePower, toggleBank}) => {
       <Display />
       <Slider
         id='volume'
+        updateVolume={updateVolume}
       />
       <Switch
         id='bank'
