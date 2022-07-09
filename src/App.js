@@ -16,6 +16,12 @@ const App = () => {
       setState(prev => ({ ...prev, power: 'ON' }))
   }
 
+  const toggleBank = () => {
+    return state.bank === 'ON' ?
+      setState(prev => ({ ...prev, bank: 'OFF' })) :
+      setState(prev => ({ ...prev, bank: 'ON' }))
+  }
+
   return (
     <StateContext.Provider value={state}>
       <div className="app h-screen flex flex-col items-center justify-center">
@@ -23,6 +29,7 @@ const App = () => {
           <ButtonContainer />
           <SwitchContainer 
           togglePower={togglePower}
+          toggleBank={toggleBank}
           />
         </div>
       </div>

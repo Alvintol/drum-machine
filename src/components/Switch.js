@@ -1,14 +1,13 @@
 import { useContext } from 'react';
-import {StateContext} from '../App';
+import { StateContext } from '../App';
 
-const Switch = ({id, togglePower}) => {
+const Switch = ({ id, togglePower, toggleBank }) => {
   const state = useContext(StateContext);
 
-  
   return (
-    <div 
-    id={id}
-    onClick={togglePower}
+    <div
+      id={id}
+      onClick={id === 'power' ? togglePower : toggleBank}
     >
       <div className='flex flex-row text-sm text-bold w-20 h-8 justify-start border-solid border-2 border-stone-400 rounded-sm bg-slate-600'>
         <div className='p-1 align-center border-solid border-2 border-stone-300 rounded-sm bg-slate-600 text-stone-200'>
