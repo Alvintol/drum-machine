@@ -1,13 +1,18 @@
 import Button from './Button';
+import {heaterKit, pianoKit } from './ButtonKits';
+import { useContext } from 'react';
+import { StateContext } from '../App';
+
 const ButtonContainer = ({displayButton}) => {
 
-  const array = ['Q', 'W', 'E', 'A', 'S', 'D', 'Z', 'X', 'C'];
+  const state = useContext(StateContext);
+  const kit = state.bank === 'Heater' ? heaterKit : pianoKit;
 
-  const buttons = array.map((btn, i) => {
+  const buttons = kit.map((btn, i) => {
     return (
       <Button
       key={i}
-      id={btn}
+      btn={btn}
       displayButton={displayButton}
       />
     )
