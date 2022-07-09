@@ -1,9 +1,9 @@
-import { useContext } from 'react';
-import { StateContext } from '../App';
+import { useAppState, useVolumeUpdate } from '../AppContext';
 
-const Slider = ({ id, updateVolume }) => {
+const Slider = ({ id }) => {
 
-  const state = useContext(StateContext);
+  const state = useAppState();
+  const updateVolume = useVolumeUpdate();
 
   return (
     <div id={id} className='flex flex-col'>

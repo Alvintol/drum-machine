@@ -1,8 +1,9 @@
-import { useContext } from 'react';
-import { StateContext } from '../App';
+import { useAppState, usePowerUpdate, useBankUpdate } from '../AppContext';
 
-const Switch = ({ id, togglePower, toggleBank }) => {
-  const state = useContext(StateContext);
+const Switch = ({ id }) => {
+  const state = useAppState();
+  const toggleBank = useBankUpdate();
+  const togglePower = usePowerUpdate();
 
   return (
     <div

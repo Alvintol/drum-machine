@@ -1,7 +1,10 @@
-const Button = ({btn, displayButton}) => {
+import { useDisplayUpdate } from '../AppContext';
+
+const Button = ({btn}) => {
   
+  const displayButton = useDisplayUpdate();
   const {keyCode, keyTrigger, id, url} = btn;
-  
+
   return (
 
     <div 
