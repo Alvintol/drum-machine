@@ -6,11 +6,17 @@ const ButtonContainer = () => {
 
   const state = useAppState();
   const kit = state.bank === 'Heater' ? heaterKit : pianoKit;
+  
+  
 
-  const buttons = kit.map((btn, i) => {
+  const buttons = kit.map((btn) => {
+
+    const {keyTrigger } = btn;
+
+    
     return (
       <Button
-      key={i}
+      key={keyTrigger}
       btn={btn}
       />
     )

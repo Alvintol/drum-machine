@@ -5,6 +5,11 @@ import { StateProvider } from './AppContext';
 
 const App = () => {
 
+  document.addEventListener('keypress', (e) => {
+    e.preventDefault()
+    console.log(e.key)
+  })
+
   return (
     <StateProvider>
       <div className="app h-screen flex flex-col items-center justify-center">
