@@ -17,9 +17,9 @@ const App = () => {
 
 
   const toggleBank = () =>
-    state.bank === 'ON' ?
-      setState(prev => ({ ...prev, bank: 'OFF' })) :
-      setState(prev => ({ ...prev, bank: 'ON' }));
+    state.bank === 'Heater' ?
+      setState(prev => ({ ...prev, bank: 'Piano' })) :
+      setState(prev => ({ ...prev, bank: 'Heater' }));
 
   const displayButton = (id) => setState(prev => ({ ...prev, display: id }));
 
