@@ -8,20 +8,22 @@ export const StateContext = createContext(appState);
 
 const App = () => {
 
-  const [state, setState] = useState(appState)
+  const [state, setState] = useState(appState);
 
   const togglePower = () =>
     state.power === 'ON' ?
       setState(prev => ({ ...prev, power: 'OFF' })) :
-      setState(prev => ({ ...prev, power: 'ON' }))
+      setState(prev => ({ ...prev, power: 'ON' }));
 
 
   const toggleBank = () =>
     state.bank === 'ON' ?
       setState(prev => ({ ...prev, bank: 'OFF' })) :
-      setState(prev => ({ ...prev, bank: 'ON' }))
+      setState(prev => ({ ...prev, bank: 'ON' }));
 
-  const displayButton = (id) => setState(prev => ({ ...prev, display: id }))
+  const displayButton = (id) => setState(prev => ({ ...prev, display: id }));
+
+  
 
   return (
     <StateContext.Provider value={state}>

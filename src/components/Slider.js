@@ -1,7 +1,13 @@
+import { useContext } from 'react';
+import { StateContext } from '../App';
+
 const Slider = ({ id }) => {
 
+  const state = useContext(StateContext);
+
   return (
-    <div id={id}>
+    <div id={id} className='flex flex-col'>
+      Volume: {state.volume * 100}%
       <input
         min='0'
         max='1'
