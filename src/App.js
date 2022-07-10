@@ -2,13 +2,9 @@ import './css/main.css';
 import ButtonContainer from './components/ButtonContainer';
 import SwitchContainer from './components/SwitchContainer';
 import { StateProvider } from './AppContext';
+import { useKey } from './UseKey';
 
 const App = () => {
-
-  document.addEventListener('keypress', (e) => {
-    e.preventDefault()
-    console.log(e.key)
-  })
 
   return (
     <StateProvider>

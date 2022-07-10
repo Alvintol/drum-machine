@@ -1,4 +1,5 @@
 import { useAppState, useDisplayUpdate } from '../AppContext';
+import { useKey } from '../UseKey';
 
 
 const Button = ({ btn }) => {
@@ -8,6 +9,13 @@ const Button = ({ btn }) => {
   const { keyCode, keyTrigger, id, url } = btn;
 
   const handleClick = () => state.power === 'ON' ? displayButton(id) : null;
+
+
+  useKey(`Key${keyTrigger}`, (e) => {
+    if (e.key === keyTrigger.toLowerCase()) {
+      console.log('event:', e.key)
+    }
+  })
 
   return (
 
