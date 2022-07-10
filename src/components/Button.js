@@ -17,29 +17,32 @@ const Button = ({ btn }) => {
 
   const [btnClass, setBtnClass] = useState(primaryClass + offBtn);
 
-  
-  const handleClick = () => {
+  const playSound = () => {
     const sound = new Howl({
       src: [url],
       html5: true,
       volume: state.volume,
     });
+    sound.play()
+  }
+
+  const handleClick = () => {
     if (state.power === 'ON') {
       displayButton(id)
-      sound.play();
+      playSound()
     }
   };
 
-  
-
-
   const classChange = (event) => {
-    if (event.type === 'mousedown' ||
-      event.type === 'keydown') {
-      setBtnClass(primaryClass + onBtn)
+    if (state.power === 'ON' &&
+      (event.type === 'mousedown' ||
+        event.type === 'keydown')) {
+      setBtnClass(primaryClass + onBtn);
+      playSound()
     }
-    if (event.type === 'mouseup' ||
-      event.type === 'keyup') {
+    if (state.power === 'ON' &&
+      (event.type === 'mouseup' ||
+        event.type === 'keyup')) {
       setBtnClass(primaryClass + offBtn)
     }
   };
