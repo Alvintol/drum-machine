@@ -16,20 +16,21 @@ const Button = ({ btn }) => {
 
 
   const [btnClass, setBtnClass] = useState(primaryClass + offBtn);
-  const sound = new Howl({
-    src: [url],
-    volume: state.volume
-  });
-  
-    console.log('URL:', url)
+
   
   const handleClick = () => {
+    const sound = new Howl({
+      src: [url],
+      html5: true,
+      volume: state.volume,
+    });
     if (state.power === 'ON') {
       displayButton(id)
       sound.play();
-      console.log('SRC:', sound.src)
     }
   };
+
+  
 
 
   const classChange = (event) => {
