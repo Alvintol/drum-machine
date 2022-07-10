@@ -8,12 +8,11 @@ const Button = ({ btn }) => {
   const displayButton = useDisplayUpdate();
   const { keyCode, keyTrigger, id, url } = btn;
 
-  const handleClick = () => state.power === 'ON' ? displayButton(id) : null;
-
+  const handleClick = () => state.power === 'ON' ? displayButton(id) : null
 
   useKey(`Key${keyTrigger}`, (e) => {
-    if (e.key === keyTrigger.toLowerCase()) {
-      console.log('event:', e.key)
+    if (e?.key === keyTrigger.toLowerCase()) {
+      displayButton(id)
     }
   })
 
