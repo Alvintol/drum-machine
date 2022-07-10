@@ -2,7 +2,9 @@
 
 React based drum pad machine. Focusing on Tailwindcss & global state managment with the useContext react hook.
 
-[Video of app demo]()
+[Test/demo the app functions](https://master--atolentino-drum-machine.netlify.app/)
+
+[Video of app demo](https://user-images.githubusercontent.com/96437758/178134224-37b6adc1-c631-4c22-b9ab-3e75cb7e665c.mov)
 
 ## Running the project
 
