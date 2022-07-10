@@ -6,7 +6,7 @@ const SwitchContainer = () => {
   return (
     <div
       id='switch-container'
-      className='flex flex-col justify-around items-center h-64 md:w-1/2 md: h-full'>
+      className='flex flex-col justify-around items-center my-5 md:w-1/2 md: h-full'>
       <Switch
         id='Power'
       />

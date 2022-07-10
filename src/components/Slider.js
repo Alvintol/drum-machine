@@ -6,7 +6,7 @@ const Slider = ({ id }) => {
   const updateVolume = useVolumeUpdate();
 
   return (
-    <div id={id} className='flex flex-col'>
+    <div id={id} className='flex flex-col mt-3 outline-hidden'>
       Volume: {(state.volume * 100).toFixed(0)}%
       <input
         min='0'

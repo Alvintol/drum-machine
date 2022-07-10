@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useAppState, useDisplayUpdate } from '../AppContext';
 import { useKey } from '../EventListeners';
-import { Howl, Howler } from 'howler';
+import { Howl } from 'howler';
 
 
 const Button = ({ btn }) => {

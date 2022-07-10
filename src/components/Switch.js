@@ -5,7 +5,7 @@ const Switch = ({ id }) => {
   const toggleBank = useBankUpdate();
   const togglePower = usePowerUpdate();
 
-  const mainClass = 'flex flex-row text-sm text-bold w-20 h-8 border-solid border-2 border-stone-400 rounded-sm bg-slate-600'
+  const mainClass = 'flex flex-row text-sm text-bold w-20 h-8 m-5 border-solid border-2 border-stone-400 rounded-sm bg-slate-600'
 
   const powerBtn = state.power === 'ON' ? `${mainClass} justify-start`: `${mainClass} justify-end`;
   const bankBtn = state.bank === 'Heater' ? `${mainClass} justify-start`: `${mainClass} justify-end`;
