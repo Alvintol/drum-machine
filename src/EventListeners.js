@@ -17,3 +17,4 @@ export const useKey = (key, callback) => {
     return () => document.removeEventListener('keydown', handle)
   }, [key])
 };
+
