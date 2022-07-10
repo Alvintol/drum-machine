@@ -12,7 +12,7 @@ const Button = ({ btn }) => {
 
   const offBtn = ' bg-emerald-400 w-32 h-32';
   const onBtn = ' bg-orange-300 w-28 h-28 self-center';
-  const primaryClass = 'text-center flex flex-col justify-center justify-self-center font-bold text-stone-600 border rounded-sm border-black shadow-2xl '
+  const primaryClass = 'drum-pad text-center flex flex-col justify-center justify-self-center font-bold text-stone-600 border rounded-sm border-black shadow-2xl '
 
 
   const [btnClass, setBtnClass] = useState(primaryClass + offBtn);
@@ -56,6 +56,7 @@ const Button = ({ btn }) => {
 
   return (
     <div
+      id={id}
       className={btnClass}
       onClick={() => handleClick()}
       onMouseDown={(e) => classChange(e)}
