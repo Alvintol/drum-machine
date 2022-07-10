@@ -2,6 +2,8 @@
 
 React based drum pad machine. Focusing on Tailwindcss & global state managment with the useContext react hook.
 
+[Video of app demo]()
+
 ## Running the project
 
 Run `npm install` or `yarn` to install the dependencies. 
