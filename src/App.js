@@ -2,7 +2,7 @@ import './css/main.css';
 import ButtonContainer from './components/ButtonContainer';
 import SwitchContainer from './components/SwitchContainer';
 import { StateProvider } from './AppContext';
-import { useKey } from './UseKey';
+import { useKey } from './EventListeners';
 
 const App = () => {
 

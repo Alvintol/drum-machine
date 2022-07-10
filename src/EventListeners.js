@@ -13,6 +13,7 @@ export const useKey = (key, callback) => {
       }
     }
     document.addEventListener('keydown', handle)
+    document.addEventListener('keyup', handle)
     return () => document.removeEventListener('keydown', handle)
   }, [key])
 };
